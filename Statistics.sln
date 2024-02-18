@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statistics", "Statistics.csproj", "{32703382-DEC4-4068-B34E-D54C763918E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticTest", "..\StatisticTest\StatisticTest.csproj", "{7E6825E9-C6CE-4F46-BE6F-046789EEF0E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{32703382-DEC4-4068-B34E-D54C763918E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32703382-DEC4-4068-B34E-D54C763918E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32703382-DEC4-4068-B34E-D54C763918E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6825E9-C6CE-4F46-BE6F-046789EEF0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6825E9-C6CE-4F46-BE6F-046789EEF0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6825E9-C6CE-4F46-BE6F-046789EEF0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6825E9-C6CE-4F46-BE6F-046789EEF0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

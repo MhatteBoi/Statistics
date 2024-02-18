@@ -72,10 +72,41 @@ namespace Statistics
             return dbl;
         }
 
-        //public static int[] Mode()
-        //{
-           
-        //}
+        public static int[] Mode()
+        {
+            //ta hand om error
+            if (source == null || source.Length == 0)
+                Console.WriteLine("Error: null or to small list");
+            
+
+            Dictionary<int, int> frequency = new Dictionary<int, int>();  // dictionary som tar <Tkey, TValue> som int 
+
+            // hitta frekvens för varje nr
+            foreach (int i in source)
+            {
+                //key är värdet och value är frekvens i dictionary så här kollar man om det är samma "key" och om det är det så lägger vi 1+ på value som då ökar frekvens
+                // för det nummer!
+                if (frequency.ContainsKey(i))
+                    frequency[i]++;
+                else
+                    frequency[i] = 1;
+            }
+
+            // hitta max frekvens
+            int maxFrequency = frequency.Values.Max();
+
+            Console.WriteLine("max frekvens är: " + maxFrequency);
+
+            // en lista som ska hålla våra typvärden
+            List<int> modes = new List<int>();
+
+            foreach (var i in frequency) // sortera ut nr med högst frekvens och lägg de i listan!
+            {
+                if (i.Value == maxFrequency)
+                    modes.Add(i.Key);
+            }
+            return modes.ToArray(); // gör listan till array och returnera den!   
+        }
 
         public static int Range()
         {
